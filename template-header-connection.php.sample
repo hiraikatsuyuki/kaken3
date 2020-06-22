@@ -1,0 +1,10 @@
+<?php
+$dbtype = "";
+$sv = "";
+$dbname = "";
+$user = "";
+$pass = "";
+$dsn = "$dbtype:dbname=$dbname;host=$sv";
+$conn = new PDO ($dsn, $user, $pass);
+$conn -> query("set names utf8");
+?>
